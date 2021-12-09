@@ -10,15 +10,13 @@ YEAR: int = 2021
 DAY: int = 0
 
 
-def get_input() -> List[int]:
-    result = None
+def get_input() -> List[str]:
     filename = f'input-{YEAR}-{DAY}'
     if exists(filename):
         with open(filename, 'r') as input_file:
-            result = [line for line in input_file.read().splitlines()]
+            return [line for line in input_file.read().splitlines()]
     else:
         raise FileNotFoundError(f"Did not find input file: '{filename}'.")
-    return result
 
 
 def part_one(data):
@@ -31,13 +29,13 @@ def part_two(data):
 
 def main():
     example = None
-    input_data = get_input()
+    # input_data = get_input()
 
     assert part_one(example)
-    print(f'Part 1 Answer:\n{part_one(input_data)}')
+    # print(f'Part 1 Answer:\n{part_one(input_data)}')
 
-    assert part_two(example)
-    print(f'Part 2 Answer:\n{part_two(input_data)}')
+    # assert part_two(example)
+    # print(f'Part 2 Answer:\n{part_two(input_data)}')
 
 
 if __name__ == '__main__':
