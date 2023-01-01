@@ -3,9 +3,33 @@
   "version": "0.0.2022",
   "description": "Advent of Code",
   "scripts": {
-    "watch": "npm run start -- --watch",
+    "watch": "nodemon",
     "start": "npm run start:1",
-    "start:1": "ts-node day1.ts"
+    "start:1": "ts-node day1.ts",
+    "start:2": "ts-node day2.ts",
+    "start:3": "ts-node day3.ts",
+    "start:4": "ts-node day4.ts",
+    "start:5": "ts-node day5.ts",
+    "start:6": "ts-node day6.ts",
+    "start:7": "ts-node day7.ts",
+    "start:8": "ts-node day8.ts",
+    "start:9": "ts-node day9.ts",
+    "start:10": "ts-node day10.ts",
+    "start:11": "ts-node day11.ts",
+    "start:12": "ts-node day12.ts",
+    "start:13": "ts-node day13.ts",
+    "start:14": "ts-node day14.ts",
+    "start:15": "ts-node day15.ts",
+    "start:16": "ts-node day16.ts",
+    "start:17": "ts-node day17.ts",
+    "start:18": "ts-node day18.ts",
+    "start:19": "ts-node day19.ts",
+    "start:20": "ts-node day20.ts",
+    "start:21": "ts-node day21.ts",
+    "start:22": "ts-node day22.ts",
+    "start:23": "ts-node day23.ts",
+    "start:24": "ts-node day24.ts",
+    "start:25": "ts-node day25.ts"
   },
   "repository": {
     "type": "git",
@@ -20,12 +44,15 @@
     "url": "https://github.com/chris-moy/adventofcode/issues"
   },
   "homepage": "https://github.com/chris-moy/adventofcode#readme",
+  "nodemonConfig": {
+    "delay": 2500,
+    "execMap": {
+      "ts": "ts-node"
+    }
+  },
   "devDependencies": {
     "@tsconfig/node18-strictest-esm": "^1.0.1",
-    "@typescript-eslint/parser": "^5.47.1",
-    "eslint": "^8.30.0",
-    "prettier": "^2.8.1",
-    "prompt-sync": "^4.2.0",
+    "nodemon": "^2.0.20",
     "ts-node": "^10.9.1",
     "typescript": "^4.9.4"
   }
