@@ -4,7 +4,7 @@
   "description": "Advent of Code",
   "scripts": {
     "watch": "nodemon",
-    "start": "npm run start:5",
+    "start": "npm run start:6",
     "start:1": "ts-node day1.ts",
     "start:2": "ts-node day2.ts",
     "start:3": "ts-node day3.ts",
