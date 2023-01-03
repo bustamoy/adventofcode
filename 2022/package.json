@@ -4,7 +4,7 @@
   "description": "Advent of Code",
   "scripts": {
     "watch": "nodemon",
-    "start": "npm run start:7",
+    "start": "npm run start:8",
     "start:1": "ts-node day1.ts",
     "start:2": "ts-node day2.ts",
     "start:3": "ts-node day3.ts",
@@ -45,7 +45,7 @@
   },
   "homepage": "https://github.com/chris-moy/adventofcode#readme",
   "nodemonConfig": {
-    "delay": 2500,
+    "delay": 0,
     "execMap": {
       "ts": "ts-node"
     }
